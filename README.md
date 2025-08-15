@@ -7,7 +7,7 @@ This project implements a classic Pong game using Python and Pygame. It allows t
 ```
 pong-game/
 ├── pong/
-│   └── __init__.py      # Required to have a package
+│   ├── __init__.py      # Required to have a package
 │   └── main.py          # Entry point of the game
 ├── env/                 # Virtual environment directory
 ├── pyproject.toml       # Project configuration and dependencies
