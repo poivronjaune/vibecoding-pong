@@ -6,7 +6,8 @@ This project implements a classic Pong game using Python and Pygame. It allows t
 ## Project Structure
 ```
 pong-game/
-├── src/
+├── pong/
+│   └── __init__.py      # Required to have a package
 │   └── main.py          # Entry point of the game
 ├── env/                 # Virtual environment directory
 ├── pyproject.toml       # Project configuration and dependencies
@@ -14,39 +15,29 @@ pong-game/
 ```
 
 ## Setup Instructions
+0. **Make sure poetry is installed**
+   ```bash
+   pip install poetry
+   ```
+If you get a path warning add the python scripts path to your computer path envirnment variables.
 
 1. **Clone the Repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/poivronjaune/vibecoding-pong.git
    cd pong-game
    ```
 
 2. **Create a Virtual Environment**
    To create a virtual environment named `env`, run:
    ```bash
-   python -m venv env
+   poetry install
    ```
 
-3. **Activate the Virtual Environment**
-   - On Windows:
-     ```bash
-     env\Scripts\activate
-     ```
-   - On macOS/Linux:
-     ```bash
-     source env/bin/activate
-     ```
-
-4. **Install Dependencies**
-   Install the required dependencies using pip:
-   ```bash
-   pip install pygame
-   ```
 
 ## Running the Game
 To run the Pong game, execute the following command:
 ```bash
-python src/main.py
+poetry run python -m pong.main
 ```
 
 ## Controls
