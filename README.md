@@ -3,6 +3,10 @@
 ## Overview
 This project implements a classic Pong game using Python and Pygame. It allows two players to control paddles and compete to score points by bouncing a ball back and forth.
 
+## PRD - Product Requirements Document
+the PRD.MD file contains the desciption of the PONG game using some structured definitions and parameters. Initial versiin produced using an LLM (ChatGPT).  
+Code generation was produced with VS Code Copilot giving it the PRD as the game defintion.
+
 ## Project Structure
 ```
 pong-game/
